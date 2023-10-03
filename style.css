@@ -1,0 +1,114 @@
+/* @import url('https://fonts.maateen.me/kalpurush/font.css'); */
+
+
+pre {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	column-gap: 302px;
+	color: rgb(28, 26, 26);
+	font-family: 'kalpurush';
+	font-size: 18px;
+}
+
+div {
+
+	font-family: 'Kalpurush', sans-serif;
+}
+
+body {
+	font-family: 'Kalpurush', inkfree !important;
+	background: #edeefa;
+	/* background: #26262c; */
+	font-size: 16px;
+}
+
+a {
+	width: 30%;
+	background-color: #ffffff;
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 8px;
+	color: black;
+	padding: 12px 16px;
+	text-align: center;
+	transition: 300ms;
+	box-shadow: 0px 10px 20px 0px #1500ff1b;
+}
+
+a:hover {
+	background: #487BFF;
+	color: white;
+}
+
+.top-nav {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	color: #05061f;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 24px;
+	gap: 10px;
+	padding: 20px;
+	background: #ffffff;
+	border-radius: 8px;
+}
+
+.h-link {
+	background: none;
+	padding: 0px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	color: #fff;
+	font-size: 18px;
+	gap: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	box-shadow: none;
+}
+
+.h-link.prev:hover {background: #0e8c53;}
+
+.h-link-folder {
+	background: transparent;
+	box-shadow: none;
+}
+
+.h-link-folder:hover {
+	background: #000928;
+}
+
+.h-link:hover {
+	background: #097042;
+	/* -o-animation: backwards 20ms; */
+}
+
+.poemname {
+	background: #000;
+	/* padding: 30px; */
+}
+
+a:hover {
+	background: #487BFF;
+	color: white;
+}
+
+@media screen and (max-width: 600px) {
+	.h-link img {
+		width: 140px;
+	}
+}
