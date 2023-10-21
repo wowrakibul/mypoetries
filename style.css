@@ -1,114 +1,113 @@
-/* @import url('https://fonts.maateen.me/kalpurush/font.css'); */
+@import url('https://fonts.maateen.me/kalpurush/font.css');
 
 
-pre {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	column-gap: 302px;
-	color: rgb(28, 26, 26);
-	font-family: 'kalpurush';
-	font-size: 18px;
+*,
+body,
+html {
+    font-family: 'kalpurush' !important;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
-div {
-
-	font-family: 'Kalpurush', sans-serif;
+.back_to_top {
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    float: right;
+    right: 0;
+    bottom: 0;
+    margin: 0px 20px 20px 0px;
+    animation: backGear 0.9s infinite;
 }
 
-body {
-	font-family: 'Kalpurush', inkfree !important;
-	background: #edeefa;
-	/* background: #26262c; */
-	font-size: 16px;
+.back_top,
+.back_to_top img {
+    width: 48px;
+    border-radius: 100px;
 }
 
-a {
-	width: 30%;
-	background-color: #ffffff;
-	border: none;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	cursor: pointer;
-	border-radius: 8px;
-	color: black;
-	padding: 12px 16px;
-	text-align: center;
-	transition: 300ms;
-	box-shadow: 0px 10px 20px 0px #1500ff1b;
+.back_to_top.visible {
+    display: block;
 }
 
-a:hover {
-	background: #487BFF;
-	color: white;
+@keyframes backGear {
+    0% {
+        rotate: 0deg;
+    }
+
+    40% {
+        rotate: 5deg;
+    }
+
+    0% {
+        rotate: 0deg;
+    }
 }
 
-.top-nav {
-	position: relative;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+header {
+    background: #f2f3fb;
+    color: #33343d;
+    text-align: center;
+    padding: 16px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    position: sticky;
+    top: 0;
 }
 
 h1 {
-	color: #05061f;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	padding: 24px;
-	gap: 10px;
-	padding: 20px;
-	background: #ffffff;
-	border-radius: 8px;
+    width: 600px;
 }
 
-.h-link {
-	background: none;
-	padding: 0px;
-	margin-bottom: 20px;
-	margin-top: 20px;
-	color: #fff;
-	font-size: 18px;
-	gap: 40px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	box-shadow: none;
+.file_jump {
+    width: 100%;
+    max-width: 200px;
 }
 
-.h-link.prev:hover {background: #0e8c53;}
-
-.h-link-folder {
-	background: transparent;
-	box-shadow: none;
+.table_contents {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 32px;
+    margin: 12px 12px 0px 12px;
+    left: 0;
 }
 
-.h-link-folder:hover {
-	background: #000928;
+.poem_link {
+    display: flex;
+    text-align: center;
+    background: #206061;
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 4px;
 }
 
-.h-link:hover {
-	background: #097042;
-	/* -o-animation: backwards 20ms; */
+.poem_link:hover {
+    background: #000;
 }
-
-.poemname {
-	background: #000;
-	/* padding: 30px; */
+pre{
+    padding: 0px 0px 0px 80px;
 }
-
-a:hover {
-	background: #487BFF;
-	color: white;
+#poemname{
+    width: 400px;
+    border: 1.3px rgba(25, 27, 41, 0.092) solid;
 }
+separator{
+    display: none;
+}
+@media screen and (max-width: 660px) {
+    header {
+        font-size: 11px;
+        /* flex-direction: column; */
+    }
 
-@media screen and (max-width: 600px) {
-	.h-link img {
-		width: 140px;
-	}
+    .file_jump {
+        width: 100px;
+    }
 }
