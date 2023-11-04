@@ -94,7 +94,7 @@ h1 {
 pre{
     padding: 0px 0px 0px 80px;
 }
-#poemname{
+.poemname{
     width: 400px;
     border: 1.3px rgba(25, 27, 41, 0.092) solid;
 }
